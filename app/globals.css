@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Segoe UI", "Arial Hebrew", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #0b1220;
+}
+
+/* Visible, high-contrast focus ring for keyboard navigation (WCAG 2.1 AA) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #2479e0;
+  outline-offset: 2px;
+}
+
+/* Skip-link: hidden until focused, used for keyboard accessibility */
+.skip-link {
+  position: absolute;
+  top: -3rem;
+  right: 1rem;
+  z-index: 100;
+  background: #152b4c;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  transition: top 0.2s ease-in-out;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
