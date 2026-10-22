@@ -127,7 +127,7 @@ export default function LeadForm() {
             disabled={isLoading}
             aria-invalid={Boolean(fieldErrors.name)}
             aria-describedby={fieldErrors.name ? "name-error" : undefined}
-            placeholder="לדוגמה: דני כהן"
+            
             className="w-full rounded-xl border border-slate-300 px-4 py-3 text-base text-ink placeholder:text-slate-400 transition focus:border-brand-500 focus:outline-none focus:ring-4 focus:ring-brand-500/20 disabled:bg-slate-50"
           />
           {fieldErrors.name && (
@@ -160,7 +160,6 @@ export default function LeadForm() {
             disabled={isLoading}
             aria-invalid={Boolean(fieldErrors.phone)}
             aria-describedby={fieldErrors.phone ? "phone-error" : undefined}
-            placeholder="050-1234567"
             className="w-full rounded-xl border border-slate-300 px-4 py-3 text-base text-ink placeholder:text-slate-400 transition focus:border-brand-500 focus:outline-none focus:ring-4 focus:ring-brand-500/20 disabled:bg-slate-50"
           />
           {fieldErrors.phone && (
@@ -192,7 +191,7 @@ export default function LeadForm() {
             disabled={isLoading}
             aria-invalid={Boolean(fieldErrors.carModel)}
             aria-describedby={fieldErrors.carModel ? "carModel-error" : undefined}
-            placeholder="לדוגמה: פולקסווגן פאסאט 2019"
+  
             className="w-full rounded-xl border border-slate-300 px-4 py-3 text-base text-ink placeholder:text-slate-400 transition focus:border-brand-500 focus:outline-none focus:ring-4 focus:ring-brand-500/20 disabled:bg-slate-50"
           />
           {fieldErrors.carModel && (
