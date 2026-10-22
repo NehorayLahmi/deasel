@@ -10,7 +10,7 @@ export default function Header() {
             <Wrench className="h-5 w-5" aria-hidden="true" />
           </span>
           <div className="leading-tight">
-            <p className="text-sm font-extrabold text-ink sm:text-base">
+            <p className="text-sm font-bold text-ink sm:text-base">
               {BUSINESS.siteName}
             </p>
             <p className="text-xs text-slate-500">פתרון תוכנה מקצועי לרכב</p>

@@ -34,7 +34,7 @@ export default function HowItWorks() {
         <div className="mx-auto max-w-2xl text-center">
           <h2
             id="how-it-works-heading"
-            className="text-2xl font-extrabold text-ink sm:text-3xl"
+            className="text-2xl font-headline text-ink sm:text-3xl"
           >
             איך מתבצע התהליך?
           </h2>

@@ -25,7 +25,7 @@ export default function LegalLayout({
             חזרה לעמוד הבית
           </a>
 
-          <h1 className="text-2xl font-extrabold text-ink sm:text-3xl">
+          <h1 className="text-2xl font-headline text-ink sm:text-3xl">
             {title}
           </h1>
           <p className="mt-2 text-sm text-slate-500">עודכן לאחרונה: {updatedAt}</p>

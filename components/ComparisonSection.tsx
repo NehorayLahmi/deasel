@@ -9,7 +9,7 @@ const DEALER_POINTS = [
 
 const SOFTWARE_POINTS = [
   "ביטול מלא ומקצועי של מערכת האוריאה בתוכנה",
-  "עלות קבועה של 1,800–2,500 ש״ח בלבד",
+  "מחירים נוחים לכל כיס",
   "הטיפול מתבצע באותו היום, ללא השבתה",
   "אחריות תוכנה ללא הגבלת זמן על העבודה",
 ];
@@ -25,7 +25,7 @@ export default function ComparisonSection() {
         <div className="mx-auto max-w-2xl text-center">
           <h2
             id="comparison-heading"
-            className="text-2xl font-extrabold text-ink sm:text-3xl"
+            className="text-2xl font-headline text-ink sm:text-3xl"
           >
             החלפת חלקים במוסך היבואן, או פתרון תוכנה חכם?
           </h2>

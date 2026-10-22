@@ -18,20 +18,20 @@ export default function Hero() {
 
       <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
         <div className="animate-fadeUp space-y-6 text-right">
-          <span className="inline-flex items-center gap-2 rounded-full bg-accent/15 px-4 py-1.5 text-sm font-bold text-accent-light ring-1 ring-accent/40">
+          <span className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-bold text-accent-light ring-accent/40">
             <span className="h-2 w-2 animate-pulseSoft rounded-full bg-accent" />
             הרכב במצב הספירה לאחור? יש פתרון מיידי
           </span>
 
-          <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
+          <h1 className="text-3xl font-headline leading-tight sm:text-4xl lg:text-5xl">
             תקלת אוריאה (AdBlue) ברכב?
             <br />
             <span className="text-brand-200">הספירה לאחור להשבתה החלה?</span>
           </h1>
 
           <p className="max-w-xl text-lg leading-relaxed text-brand-100 sm:text-xl">
-            פתרון תוכנתי סופי ומקצועי לביטול מערכת האוריאה —{" "}
-            <strong className="text-white">1,800–2,500 ש&quot;ח בלבד</strong>, לעומת
+            פתרון תוכנתי סופי ומקצועי לביטול מערכת האוריאה {" "}
+            <strong className="text-white">במחיר זול משמעותית</strong>, לעומת
             אלפי שקלים על החלפת חלקים במוסך היבואן. ללא נסיעה למוסך, ללא השבתת
             הרכב לימים.
           </p>
@@ -57,7 +57,7 @@ export default function Hero() {
               className="flex items-center justify-center gap-2 rounded-xl bg-success px-6 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-success/40"
             >
               <MessageCircle className="h-5 w-5" aria-hidden="true" />
-              וואטסאפ מיידי
+              וואטסאפ
             </a>
             <a
               href={buildTelLink()}

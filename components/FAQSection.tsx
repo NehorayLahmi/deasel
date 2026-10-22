@@ -20,7 +20,7 @@ const FAQ_ITEMS = [
       "ברוב הדגמים הטיפול המלא, כולל אבחון, גיבוי ועדכון תוכנה, נמשך כשעה עד שעתיים בלבד, ללא צורך להשאיר את הרכב למספר ימים.",
   },
   {
-    question: "מה כולל המחיר של 1,800–2,500 ש״ח?",
+    question: "מה כולל המחיר?",
     answer:
       "המחיר כולל אבחון מלא, גיבוי קובץ מקורי, עדכון תוכנה לביטול מערכת האוריאה, איפוס תקלות ואחריות תוכנה ללא הגבלת זמן על העבודה שבוצעה.",
   },
@@ -53,7 +53,7 @@ export default function FAQSection() {
     >
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <div className="text-center">
-          <h2 id="faq-heading" className="text-2xl font-extrabold text-ink sm:text-3xl">
+          <h2 id="faq-heading" className="text-2xl font-headline text-ink sm:text-3xl">
             שאלות נפוצות
           </h2>
           <p className="mt-3 text-slate-600">כל מה שרציתם לדעת לפני שמתחילים</p>
@@ -80,9 +80,8 @@ export default function FAQSection() {
                     <span>{item.question}</span>
                     <ChevronDown
                       aria-hidden="true"
-                      className={`h-5 w-5 shrink-0 text-slate-500 transition-transform ${
-                        isOpen ? "rotate-180" : ""
-                      }`}
+                      className={`h-5 w-5 shrink-0 text-slate-500 transition-transform ${isOpen ? "rotate-180" : ""
+                        }`}
                     />
                   </button>
                 </h3>

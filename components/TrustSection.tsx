@@ -36,7 +36,7 @@ export default function TrustSection() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 id="trust-heading" className="text-2xl font-extrabold text-ink sm:text-3xl">
+          <h2 id="trust-heading" className="text-2xl font-headline text-ink sm:text-3xl">
             בטיחות ואמינות לפני כל דבר
           </h2>
           <p className="mt-3 text-slate-600">
