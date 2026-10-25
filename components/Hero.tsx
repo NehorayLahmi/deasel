@@ -1,6 +1,9 @@
+"use client";
+
 import { ShieldCheck, Clock, BadgeCheck, Phone, MessageCircle } from "lucide-react";
 import LeadForm from "@/components/LeadForm";
 import { buildTelLink, buildWhatsAppLink, BUSINESS } from "@/lib/constants";
+import { notifyContactClick } from "@/lib/trackContact";
 
 const TRUST_BADGES = [
   { icon: ShieldCheck, label: "אחריות ללא הגבלת זמן" },
@@ -53,6 +56,7 @@ export default function Hero() {
               href={buildWhatsAppLink()}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => notifyContactClick("whatsapp", "Hero")}
               aria-label={`שליחת הודעת וואטסאפ אל ${BUSINESS.ownerName}`}
               className="flex items-center justify-center gap-2 rounded-xl bg-success px-6 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-success/40"
             >
@@ -61,6 +65,7 @@ export default function Hero() {
             </a>
             <a
               href={buildTelLink()}
+              onClick={() => notifyContactClick("call", "Hero")}
               aria-label={`חיוג ישיר למספר ${BUSINESS.phoneDisplay}`}
               className="flex items-center justify-center gap-2 rounded-xl bg-white/10 px-6 py-4 text-lg font-bold text-white ring-1 ring-white/30 transition hover:bg-white/20 focus:outline-none focus:ring-4 focus:ring-white/30"
             >

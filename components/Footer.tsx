@@ -1,5 +1,8 @@
+"use client";
+
 import { Mail, Phone, Wrench } from "lucide-react";
 import { BUSINESS, buildTelLink } from "@/lib/constants";
+import { notifyContactClick } from "@/lib/trackContact";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -27,6 +30,7 @@ export default function Footer() {
               <li>
                 <a
                   href={buildTelLink()}
+                  onClick={() => notifyContactClick("call", "Footer")}
                   className="flex items-center gap-2 transition hover:text-white"
                 >
                   <Phone className="h-4 w-4" aria-hidden="true" />

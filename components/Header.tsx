@@ -1,5 +1,8 @@
+"use client";
+
 import { Phone, Wrench } from "lucide-react";
 import { BUSINESS, buildTelLink } from "@/lib/constants";
+import { notifyContactClick } from "@/lib/trackContact";
 
 export default function Header() {
   return (
@@ -19,6 +22,7 @@ export default function Header() {
 
         <a
           href={buildTelLink()}
+          onClick={() => notifyContactClick("call", "Header")}
           aria-label={`התקשרו אל ${BUSINESS.ownerName} במספר ${BUSINESS.phoneDisplay}`}
           className="flex items-center gap-2 rounded-xl bg-brand-700 px-4 py-2.5 text-sm font-bold text-white transition hover:bg-brand-800 focus:outline-none focus:ring-4 focus:ring-brand-700/30"
         >

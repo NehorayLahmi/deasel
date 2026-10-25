@@ -32,6 +32,9 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-sans)", "Arial", "sans-serif"],
       },
+      fontWeight: {
+        headline: "800",
+      },
       boxShadow: {
         card: "0 10px 30px -10px rgba(16, 40, 80, 0.25)",
         glow: "0 0 0 4px rgba(58, 154, 245, 0.25)",
